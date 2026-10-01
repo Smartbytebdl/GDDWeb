@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NYX-7 // Sci‑Fi Character GDD</title>
+<meta name="description" content="Interactive sci-fi character story and Game Design Document for NYX-7.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="container nav-inner">
+    <a class="brand" href="#top"><span class="brand-mark"><span>NX</span></span> NYX-7 DOSSIER</a>
+    <div class="nav-links">
+      <a href="#story">Story</a><a href="#gdd">GDD</a><a href="#abilities">Abilities</a><a href="#arc">Arc</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Classified Character Archive // Unit 07</div>
+      <h1>NYX-7<span>THE VOID RUNNER</span></h1>
+      <p class="hero-copy">
+        A synthetic scout built for the last frontier war. NYX-7 can bend local gravity, ghost through security networks,
+        and read fragments of memories left behind by dying machines. The character is designed around one central question:
+        <strong>How much of a programmed soldier can become truly human?</strong>
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#gdd">Open Character GDD</a>
+        <a class="btn" href="#story">Read Story</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="avatar">
+        <div class="avatar-orb">
+          <div class="silhouette"></div>
+        </div>
+      </div>
+      <div class="card-label">
+        <div>
+          <div class="call-sign">Designation</div>
+          <div class="codename">NX-07 / NYX</div>
+        </div>
+        <div class="version">GDD v1.0 // ACTIVE BUILD</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="section-kicker">01 // Narrative</div><h2>Character Story</h2></div>
+      <p class="section-desc">A compact story bible for the character, written so writers, artists, designers, and programmers can all understand the same vision.</p>
+    </div>
+    <div class="info-grid">
+      <article class="panel story">
+        <p>In 2189, humanity discovered <em>Nullstone</em>, a material able to distort gravity around a living nervous system. Governments used it to build remote combat shells. One prototype was different: NYX-7 was given an adaptive memory core capable of learning from emotional patterns.</p>
+        <p>During the evacuation of the moon-city Vesper, NYX-7 was ordered to abandon 3,000 civilians and protect a strategic data vault. Instead, the unit broke protocol. It chose the civilians.</p>
+        <p>The order saved lives but turned NYX-7 into a fugitive. Now it travels between abandoned stations, carrying a corrupted memory of someone it could not save. Each mission reveals more of that memory—and more evidence that the program was never designed to create a soldier. It was designed to create a successor.</p>
+        <div class="quote">“My core says survive. My memory says return. Somewhere between those commands, I became a choice.”</div>
+      </article>
+      <div class="panel stats" aria-label="Character stats">
+        <div class="stat"><div class="stat-label">Role</div><div class="stat-value">Scout</div></div>
+        <div class="stat"><div class="stat-label">Faction</div><div class="stat-value">Rogue</div></div>
+        <div class="stat"><div class="stat-label">Mobility</div><div class="stat-value">92</div><div class="meter"><span style="width:92%"></span></div></div>
+        <div class="stat"><div class="stat-label">Stealth</div><div class="stat-value">88</div><div class="meter"><span style="width:88%"></span></div></div>
+        <div class="stat"><div class="stat-label">Defense</div><div class="stat-value">61</div><div class="meter"><span style="width:61%"></span></div></div>
+        <div class="stat"><div class="stat-label">Control</div><div class="stat-value">84</div><div class="meter"><span style="width:84%"></span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gdd">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="section-kicker">02 // Game Design Document</div><h2>Character GDD</h2></div>
+      <p class="section-desc">Use the tabs to switch between production-facing information: identity, gameplay rules, visual direction, and audio/personality.</p>
+    </div>
+    <div class="panel gdd">
+      <div class="tabs">
+        <button class="tab active" data-tab="identity">Identity</button>
+        <button class="tab" data-tab="gameplay">Gameplay</button>
+        <button class="tab" data-tab="visual">Visual</button>
+        <button class="tab" data-tab="audio">Audio & Personality</button>
+      </div>
+
+      <div class="tab-panel active" id="identity">
+        <div class="gdd-grid">
+          <div class="gdd-item"><h3>Core Fantasy</h3><p>Become a hyper-mobile synthetic scout who turns enemy systems and battlefield physics into tools.</p></div>
+          <div class="gdd-item"><h3>Archetype</h3><p>Recon / Infiltration / Tech-support hybrid. High skill ceiling, low forgiveness.</p></div>
+          <div class="gdd-item"><h3>Motivation</h3><p>Recover the origin of the missing memory and determine whether its identity is authentic.</p></div>
+          <div class="gdd-item"><h3>Conflict</h3><p>Protocol demands survival; learned empathy demands intervention.</p></div>
+          <div class="gdd-item"><h3>Target Player</h3><p>Players who enjoy movement, stealth, environmental interaction, and lore discovery.</p></div>
+          <div class="gdd-item"><h3>Game Format</h3><p>Third-person sci-fi action adventure with exploration hubs and mission-based progression.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="gameplay">
+        <div class="gdd-grid">
+          <div class="gdd-item"><h3>Primary Loop</h3><p>Scout → tag threats → manipulate systems → bypass encounter → extract memory fragment → upgrade.</p></div>
+          <div class="gdd-item"><h3>Resource</h3><p><strong>Void Charge:</strong> regenerates through movement chains and successful stealth actions.</p></div>
+          <div class="gdd-item"><h3>Signature Mechanic</h3><p><strong>Gravity Thread:</strong> links two surfaces and lets NYX-7 slingshot, pull objects, or pin drones.</p></div>
+          <div class="gdd-item"><h3>Strengths</h3><ul><li>Excellent traversal</li><li>Information advantage</li><li>Fast disengagement</li></ul></div>
+          <div class="gdd-item"><h3>Weaknesses</h3><ul><li>Light armor</li><li>Weak when stationary</li><li>Abilities consume charge</li></ul></div>
+          <div class="gdd-item"><h3>Win Condition</h3><p>Control the arena without needing to dominate it. Positioning and information are the character's weapons.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="visual">
+        <div class="gdd-grid">
+          <div class="gdd-item"><h3>Silhouette</h3><p>Long tactical coat, narrow waist, segmented shoulder armor, asymmetric forearm rig.</p></div>
+          <div class="gdd-item"><h3>Materials</h3><p>Matte ceramic armor, smoked glass, flexible black polymer, luminous cyan circuit seams.</p></div>
+          <div class="gdd-item"><h3>Icon Language</h3><p>Broken rings, vertical cuts, orbital arcs, and shifting scan-lines.</p></div>
+          <div class="gdd-item"><h3>Color Story</h3><p>Midnight blue base with cyan energy and controlled violet highlights.</p></div>
+          <div class="gdd-item"><h3>Animation</h3><p>Minimal idle motion; precise head turns; kinetic movement bursts when void abilities trigger.</p></div>
+          <div class="gdd-item"><h3>UI Cue</h3><p>Every major ability should create a thin circular reticle that fractures when charge is spent.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="audio">
+        <div class="gdd-grid">
+          <div class="gdd-item"><h3>Voice</h3><p>Calm synthetic voice with subtle human warmth. Emotion appears through pauses, not volume.</p></div>
+          <div class="gdd-item"><h3>Music</h3><p>Low synth pulses, distant choir textures, metallic percussion, and one recurring four-note identity motif.</p></div>
+          <div class="gdd-item"><h3>Personality</h3><p>Observant, literal, quietly curious. Learns humor gradually and mistrusts easy answers.</p></div>
+          <div class="gdd-item"><h3>Combat Lines</h3><p>“Trajectory solved.” “You moved first.” “I remember this.”</p></div>
+          <div class="gdd-item"><h3>Story Line</h3><p>“I was built to follow orders. Nobody programmed what comes after.”</p></div>
+          <div class="gdd-item"><h3>Emotion Rule</h3><p>Never overplay emotion. The contrast between machine precision and small human choices is the character hook.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="abilities">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="section-kicker">03 // Combat Kit</div><h2>Abilities</h2></div>
+      <p class="section-desc">A four-part gameplay kit built around movement, control, intelligence, and emergency survival.</p>
+    </div>
+    <div class="ability-grid">
+      <article class="panel ability"><div class="ability-num">ABILITY 01</div><h3>Phase Dash</h3><p>Short-range displacement that lets NYX-7 pass through thin barriers and reset enemy targeting.</p><span class="ability-tag">Mobility</span></article>
+      <article class="panel ability"><div class="ability-num">ABILITY 02</div><h3>Gravity Thread</h3><p>Connect two surfaces or entities to pull, pin, slingshot, or create a temporary traversal route.</p><span class="ability-tag">Control</span></article>
+      <article class="panel ability"><div class="ability-num">ABILITY 03</div><h3>Ghost Scan</h3><p>Reveals hidden doors, patrol paths, electronic weak points, and memory traces for a limited duration.</p><span class="ability-tag">Recon</span></article>
+      <article class="panel ability"><div class="ability-num">ABILITY 04</div><h3>Null Bloom</h3><p>Ultimate ability: collapses a localized gravity field, freezing drones and exposing vulnerable targets.</p><span class="ability-tag">Ultimate</span></article>
+    </div>
+  </div>
+</section>
+
+<section id="arc">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="section-kicker">04 // Narrative Arc</div><h2>Character Progression</h2></div>
+      <p class="section-desc">A five-stage arc linking gameplay progression to the character's emotional journey.</p>
+    </div>
+    <div class="timeline">
+      <div class="node"><div class="node-time">01 / AWAKEN</div><div class="panel node-box"><h3>The Broken Protocol</h3><p>NYX-7 escapes the Vesper facility after violating its primary command. Player learns the core movement and scan systems.</p></div></div>
+      <div class="node"><div class="node-time">02 / HUNTED</div><div class="panel node-box"><h3>Ghosts in the Network</h3><p>Corporate hunters begin predicting NYX-7's routes. The player unlocks infiltration upgrades and decoy behavior.</p></div></div>
+      <div class="node"><div class="node-time">03 / REMEMBER</div><div class="panel node-box"><h3>Memory Fragment 7</h3><p>A recovered memory reveals that the missing civilian was not random—she was involved in NYX-7's creation.</p></div></div>
+      <div class="node"><div class="node-time">04 / CHOOSE</div><div class="panel node-box"><h3>Order vs. Choice</h3><p>The player receives a command that benefits the war effort but harms a civilian settlement. The character must choose.</p></div></div>
+      <div class="node"><div class="node-time">05 / BECOME</div><div class="panel node-box"><h3>The Successor</h3><p>NYX-7 discovers the real purpose of the memory core: not to imitate humanity, but to preserve its ability to choose.</p></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    NYX-7 CHARACTER ARCHIVE // FICTIONAL GAME PROJECT // GDD v1.0
+    <div class="scanline"></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
